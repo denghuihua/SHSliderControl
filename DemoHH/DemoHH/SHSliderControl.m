@@ -173,7 +173,7 @@
 
 //计算存在疑问？ 为啥减20
 -(CGPoint)centerPointForIndex:(NSInteger) i{
-    CGPoint point = CGPointMake(self.frame.size.width/2,i/(float)(self.titles.count-1) * (self.frame.size.height-BOTTOM_OFFSET-TOP_OFFSET - DefaultCircleDiameter) + TOP_OFFSET + DefaultCircleDiameter/2);
+    CGPoint point = CGPointMake(self.frame.size.width/2.0,i/(float)(self.titles.count-1) * (self.frame.size.height-BOTTOM_OFFSET-TOP_OFFSET - DefaultCircleDiameter) + TOP_OFFSET + DefaultCircleDiameter/2.0);
     NSLog(@"getCenterPointForIndex:%f,%f",point.x,point.y);
     return point;
 }
