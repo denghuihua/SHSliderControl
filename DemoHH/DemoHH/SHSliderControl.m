@@ -149,7 +149,10 @@
 - (void)slideSlideButtonToIndex:(NSInteger )index
 {
     CGPoint selectPoint = [self centerPointForIndex:index];
-    self.slideBtn.center = selectPoint;
+    [UIView animateWithDuration:.3
+                     animations:^{
+                        self.slideBtn.center = selectPoint; 
+                     }];
 }
 
 - (void)animateTitleToIndex:(NSInteger)index
@@ -177,6 +180,13 @@
 
 -(NSInteger)indexOfPoint:(CGPoint )point
 {
+    //边界值判断
+    if (point.y < TOP_OFFSET + DefaultCircleDiameter/2.0) {
+        point.y = TOP_OFFSET + DefaultCircleDiameter/2.0;
+    }
+    if (point.y > self.frame.size.height - (BOTTOM_OFFSET + DefaultCircleDiameter/2.0)) {
+        point.y = self.frame.size.height - (BOTTOM_OFFSET + DefaultCircleDiameter/2.0);
+    }
     NSInteger index = 0;
     //最近索引
     for (int i  = 0; i < [self.titles count]; i++) {
