@@ -10,5 +10,5 @@
 
 @interface SHSliderControl : UIControl
 -(id)initWithFrame:(CGRect)frame titles:(NSArray<NSString *>*)titles;
-
+@property(nonatomic,assign)NSInteger selectedIndex;
 @end

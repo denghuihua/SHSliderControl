@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4ABE6CB21F9ED4360075AF37 /* SHSlideButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ABE6CB11F9ED4360075AF37 /* SHSlideButton.m */; };
 		4AF47F841F9DCDAA008B8E91 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AF47F831F9DCDAA008B8E91 /* AppDelegate.m */; };
 		4AF47F871F9DCDAA008B8E91 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AF47F861F9DCDAA008B8E91 /* ViewController.m */; };
 		4AF47F8A1F9DCDAA008B8E91 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AF47F881F9DCDAA008B8E91 /* Main.storyboard */; };
@@ -36,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4ABE6CB01F9ED4360075AF37 /* SHSlideButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SHSlideButton.h; sourceTree = "<group>"; };
+		4ABE6CB11F9ED4360075AF37 /* SHSlideButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SHSlideButton.m; sourceTree = "<group>"; };
 		4AF47F7F1F9DCDAA008B8E91 /* DemoHH.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoHH.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AF47F821F9DCDAA008B8E91 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4AF47F831F9DCDAA008B8E91 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -115,6 +118,8 @@
 				4AF47F911F9DCDAA008B8E91 /* main.m */,
 				4AF47FB41F9DCDF7008B8E91 /* SHSliderControl.h */,
 				4AF47FB51F9DCDF7008B8E91 /* SHSliderControl.m */,
+				4ABE6CB01F9ED4360075AF37 /* SHSlideButton.h */,
+				4ABE6CB11F9ED4360075AF37 /* SHSlideButton.m */,
 			);
 			path = DemoHH;
 			sourceTree = "<group>";
@@ -271,6 +276,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4AF47F871F9DCDAA008B8E91 /* ViewController.m in Sources */,
+				4ABE6CB21F9ED4360075AF37 /* SHSlideButton.m in Sources */,
 				4AF47F921F9DCDAA008B8E91 /* main.m in Sources */,
 				4AF47F841F9DCDAA008B8E91 /* AppDelegate.m in Sources */,
 				4AF47FB61F9DCDF7008B8E91 /* SHSliderControl.m in Sources */,
