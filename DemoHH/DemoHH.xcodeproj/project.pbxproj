@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		4ABE6CB21F9ED4360075AF37 /* SHSlideButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ABE6CB11F9ED4360075AF37 /* SHSlideButton.m */; };
+		4ABE6CB51F9F2B6A0075AF37 /* SHCircleSlideOnLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ABE6CB41F9F2B6A0075AF37 /* SHCircleSlideOnLine.m */; };
+		4ABE6CB71F9F3B220075AF37 /* test.png in Resources */ = {isa = PBXBuildFile; fileRef = 4ABE6CB61F9F3B220075AF37 /* test.png */; };
+		4ABE6CB91F9F3CFD0075AF37 /* 13593416336776.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4ABE6CB81F9F3CFD0075AF37 /* 13593416336776.jpg */; };
 		4AF47F841F9DCDAA008B8E91 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AF47F831F9DCDAA008B8E91 /* AppDelegate.m */; };
 		4AF47F871F9DCDAA008B8E91 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AF47F861F9DCDAA008B8E91 /* ViewController.m */; };
 		4AF47F8A1F9DCDAA008B8E91 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AF47F881F9DCDAA008B8E91 /* Main.storyboard */; };
@@ -39,6 +42,10 @@
 /* Begin PBXFileReference section */
 		4ABE6CB01F9ED4360075AF37 /* SHSlideButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SHSlideButton.h; sourceTree = "<group>"; };
 		4ABE6CB11F9ED4360075AF37 /* SHSlideButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SHSlideButton.m; sourceTree = "<group>"; };
+		4ABE6CB31F9F2B6A0075AF37 /* SHCircleSlideOnLine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SHCircleSlideOnLine.h; sourceTree = "<group>"; };
+		4ABE6CB41F9F2B6A0075AF37 /* SHCircleSlideOnLine.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SHCircleSlideOnLine.m; sourceTree = "<group>"; };
+		4ABE6CB61F9F3B220075AF37 /* test.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test.png; sourceTree = "<group>"; };
+		4ABE6CB81F9F3CFD0075AF37 /* 13593416336776.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 13593416336776.jpg; sourceTree = "<group>"; };
 		4AF47F7F1F9DCDAA008B8E91 /* DemoHH.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoHH.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AF47F821F9DCDAA008B8E91 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4AF47F831F9DCDAA008B8E91 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -107,8 +114,10 @@
 		4AF47F811F9DCDAA008B8E91 /* DemoHH */ = {
 			isa = PBXGroup;
 			children = (
+				4ABE6CB81F9F3CFD0075AF37 /* 13593416336776.jpg */,
 				4AF47F821F9DCDAA008B8E91 /* AppDelegate.h */,
 				4AF47F831F9DCDAA008B8E91 /* AppDelegate.m */,
+				4ABE6CB61F9F3B220075AF37 /* test.png */,
 				4AF47F851F9DCDAA008B8E91 /* ViewController.h */,
 				4AF47F861F9DCDAA008B8E91 /* ViewController.m */,
 				4AF47F881F9DCDAA008B8E91 /* Main.storyboard */,
@@ -120,6 +129,8 @@
 				4AF47FB51F9DCDF7008B8E91 /* SHSliderControl.m */,
 				4ABE6CB01F9ED4360075AF37 /* SHSlideButton.h */,
 				4ABE6CB11F9ED4360075AF37 /* SHSlideButton.m */,
+				4ABE6CB31F9F2B6A0075AF37 /* SHCircleSlideOnLine.h */,
+				4ABE6CB41F9F2B6A0075AF37 /* SHCircleSlideOnLine.m */,
 			);
 			path = DemoHH;
 			sourceTree = "<group>";
@@ -248,9 +259,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4ABE6CB91F9F3CFD0075AF37 /* 13593416336776.jpg in Resources */,
 				4AF47F8F1F9DCDAA008B8E91 /* LaunchScreen.storyboard in Resources */,
 				4AF47F8C1F9DCDAA008B8E91 /* Assets.xcassets in Resources */,
 				4AF47F8A1F9DCDAA008B8E91 /* Main.storyboard in Resources */,
+				4ABE6CB71F9F3B220075AF37 /* test.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,6 +291,7 @@
 				4AF47F871F9DCDAA008B8E91 /* ViewController.m in Sources */,
 				4ABE6CB21F9ED4360075AF37 /* SHSlideButton.m in Sources */,
 				4AF47F921F9DCDAA008B8E91 /* main.m in Sources */,
+				4ABE6CB51F9F2B6A0075AF37 /* SHCircleSlideOnLine.m in Sources */,
 				4AF47F841F9DCDAA008B8E91 /* AppDelegate.m in Sources */,
 				4AF47FB61F9DCDF7008B8E91 /* SHSliderControl.m in Sources */,
 			);

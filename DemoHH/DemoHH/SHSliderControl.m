@@ -18,9 +18,9 @@
 #define LABLE_WIDTH 10
 
 #define PROGRESS_CLOLOR  [UIColor colorWithRed:155/255.0 green:155/255.0 blue:155/255.0 alpha:1.0f]  //滑杆颜色
-#define DefaultCircleDiameter 5
+#define DefaultCircleDiameter 15
 
-#define TITLE_LABEL_START_TAG 50
+#define TITLE_LABEL_START_TAG 5
 
 @interface SHSliderControl()
 @property(nonatomic,strong)NSArray *titles;
