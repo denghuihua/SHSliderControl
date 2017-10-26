@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Workspace
    version = "1.0">
+   <Group
+      location = "group:/Users/huihuadeng/SHSlider/DemoHH/DemoHH/SHSegmentView"
+      name = "SHSegmentView">
+   </Group>
    <FileRef
-      location = "self:DemoHH.xcodeproj">
+      location = "self:">
    </FileRef>
 </Workspace>
