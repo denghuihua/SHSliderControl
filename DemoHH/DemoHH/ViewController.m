@@ -16,6 +16,7 @@
 @interface ViewController ()
 {
     SHCircleSlideOnLine *_circle;
+    SHStylePanelViewController *_stylePanelVC;
     
 }
 @end
@@ -29,29 +30,21 @@
     
     self.view.backgroundColor = [UIColor whiteColor];  
     
-    SHStylePanelViewController *stylePanelVC = [[SHStylePanelViewController alloc] init];
-    [self addChildViewController:stylePanelVC];
-    [self didMoveToParentViewController:stylePanelVC];
-    [self.view addSubview:stylePanelVC.view];
     
-    [stylePanelVC.view mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.right.bottom.mas_equalTo(self.view);
-        make.top.mas_offset(64);
-    }];
-    [stylePanelVC.view layoutIfNeeded];
+    
     
 //    UIImageView *imagev = [[UIImageView alloc] init];
 //    imagev.image =[UIImage imageNamed:@"13593416336776.jpg"];
 //    imagev.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height);
 //    [self.view addSubview:imagev];
     
-//    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
-//    button.frame=  CGRectMake(0, 0, 40, 40);
-//    button.backgroundColor = [UIColor blackColor];
-//    
-//    [button addTarget:self action:@selector(buttonAction:) forControlEvents:UIControlEventTouchUpInside];
-////    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc ] initWithCustomView:button];
-//    [self.view addSubview:button];
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+    button.frame=  CGRectMake(0, 0, 40, 40);
+    button.backgroundColor = [UIColor blackColor];
+    
+    [button addTarget:self action:@selector(buttonAction:) forControlEvents:UIControlEventTouchUpInside];
+//    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc ] initWithCustomView:button];
+    [self.view addSubview:button];
 
 //    SHSliderControl *sliderControl = [[SHSliderControl alloc] initWithFrame:CGRectMake(100, 100, 60, 300) titles:@[@"1",@"2",@"3",@"4",@"5",]];
 //    sliderControl.backgroundColor = [UIColor whiteColor];
@@ -82,14 +75,21 @@
 -(void)buttonAction:(UIButton *)button
 {
     NSLog(@"buttonAction");
+    SHStylePanelViewController *stylePanelVC = [[SHStylePanelViewController alloc] init];
+    [self addChildViewController:stylePanelVC];
+    [self didMoveToParentViewController:stylePanelVC];
+    [self.view addSubview:stylePanelVC.view];
+    _stylePanelVC = stylePanelVC;
     
-//    [stylePanelVC showFuncViewWithAnimation:^(BOOL finished) {
-//    }];
-    
+    [stylePanelVC.view mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.right.bottom.mas_equalTo(self.view);
+        make.top.mas_offset(64);
+    }];
+    [stylePanelVC.view layoutIfNeeded];
+    [_stylePanelVC showFuncViewWithAnimation:^(BOOL finished) {
+    }];
+
 }
-
-
-
 
 
 - (void)didReceiveMemoryWarning {

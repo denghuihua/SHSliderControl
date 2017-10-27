@@ -4,6 +4,9 @@
    <Group
       location = "group:/Users/huihuadeng/SHSlider/DemoHH/DemoHH/SHSegmentView"
       name = "SHSegmentView">
+      <FileRef
+         location = "group:Launch Screen.storyboard">
+      </FileRef>
    </Group>
    <FileRef
       location = "self:">

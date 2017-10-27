@@ -34,6 +34,9 @@
 		4ABE6D191FA1CBE10075AF37 /* font_size_select@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4ABE6D171FA1CBE00075AF37 /* font_size_select@2x.png */; };
 		4ABE6D1A1FA1CBE10075AF37 /* font_size_gray@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4ABE6D181FA1CBE00075AF37 /* font_size_gray@2x.png */; };
 		4ABE6D1F1FA1DA420075AF37 /* SHSegmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ABE6D1D1FA1D89B0075AF37 /* SHSegmentView.m */; };
+		4ABE6D231FA2D3690075AF37 /* SHFontSizeSelectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ABE6D211FA2D3690075AF37 /* SHFontSizeSelectView.m */; };
+		4ABE6D261FA2D38C0075AF37 /* SHFontTypeSelectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ABE6D241FA2D38B0075AF37 /* SHFontTypeSelectView.m */; };
+		4ABE6D291FA2D3AD0075AF37 /* SHStationerySelectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ABE6D281FA2D3AD0075AF37 /* SHStationerySelectView.m */; };
 		4AF47F841F9DCDAA008B8E91 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AF47F831F9DCDAA008B8E91 /* AppDelegate.m */; };
 		4AF47F871F9DCDAA008B8E91 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AF47F861F9DCDAA008B8E91 /* ViewController.m */; };
 		4AF47F8C1F9DCDAA008B8E91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AF47F8B1F9DCDAA008B8E91 /* Assets.xcassets */; };
@@ -110,6 +113,12 @@
 		4ABE6D181FA1CBE00075AF37 /* font_size_gray@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "font_size_gray@2x.png"; sourceTree = "<group>"; };
 		4ABE6D1C1FA1D89B0075AF37 /* SHSegmentView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SHSegmentView.h; sourceTree = "<group>"; };
 		4ABE6D1D1FA1D89B0075AF37 /* SHSegmentView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SHSegmentView.m; sourceTree = "<group>"; };
+		4ABE6D211FA2D3690075AF37 /* SHFontSizeSelectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHFontSizeSelectView.m; sourceTree = "<group>"; };
+		4ABE6D221FA2D3690075AF37 /* SHFontSizeSelectView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHFontSizeSelectView.h; sourceTree = "<group>"; };
+		4ABE6D241FA2D38B0075AF37 /* SHFontTypeSelectView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SHFontTypeSelectView.m; path = /Users/huihuadeng/SHSlider/DemoHH/DemoHH/StylePanel/Views/SHFontTypeSelectView.m; sourceTree = "<absolute>"; };
+		4ABE6D251FA2D38B0075AF37 /* SHFontTypeSelectView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SHFontTypeSelectView.h; path = /Users/huihuadeng/SHSlider/DemoHH/DemoHH/StylePanel/Views/SHFontTypeSelectView.h; sourceTree = "<absolute>"; };
+		4ABE6D271FA2D3AD0075AF37 /* SHStationerySelectView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SHStationerySelectView.h; path = /Users/huihuadeng/SHSlider/DemoHH/DemoHH/StylePanel/Views/SHStationerySelectView.h; sourceTree = "<absolute>"; };
+		4ABE6D281FA2D3AD0075AF37 /* SHStationerySelectView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SHStationerySelectView.m; path = /Users/huihuadeng/SHSlider/DemoHH/DemoHH/StylePanel/Views/SHStationerySelectView.m; sourceTree = "<absolute>"; };
 		4AF47F7F1F9DCDAA008B8E91 /* DemoHH.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoHH.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AF47F821F9DCDAA008B8E91 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4AF47F831F9DCDAA008B8E91 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -174,6 +183,7 @@
 		4ABE6CD41FA079850075AF37 /* StylePanel */ = {
 			isa = PBXGroup;
 			children = (
+				4ABE6D201FA2D3100075AF37 /* Views */,
 				4ABE6CD51FA079850075AF37 /* SHStylePanelViewController.h */,
 				4ABE6CD61FA079850075AF37 /* SHStylePanelViewController.m */,
 			);
@@ -231,6 +241,19 @@
 			name = SHSegmentView;
 			path = /Users/huihuadeng/SHSlider/DemoHH/DemoHH/SHSegmentView;
 			sourceTree = "<absolute>";
+		};
+		4ABE6D201FA2D3100075AF37 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4ABE6D271FA2D3AD0075AF37 /* SHStationerySelectView.h */,
+				4ABE6D281FA2D3AD0075AF37 /* SHStationerySelectView.m */,
+				4ABE6D251FA2D38B0075AF37 /* SHFontTypeSelectView.h */,
+				4ABE6D241FA2D38B0075AF37 /* SHFontTypeSelectView.m */,
+				4ABE6D221FA2D3690075AF37 /* SHFontSizeSelectView.h */,
+				4ABE6D211FA2D3690075AF37 /* SHFontSizeSelectView.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
 		};
 		4AF47F761F9DCDAA008B8E91 = {
 			isa = PBXGroup;
@@ -453,16 +476,19 @@
 				4AF47F921F9DCDAA008B8E91 /* main.m in Sources */,
 				4ABE6CF91FA08AF00075AF37 /* MASConstraint.m in Sources */,
 				4ABE6CC21FA070430075AF37 /* SHSlideButton.m in Sources */,
+				4ABE6D261FA2D38C0075AF37 /* SHFontTypeSelectView.m in Sources */,
 				4ABE6CFC1FA08AF00075AF37 /* MASViewAttribute.m in Sources */,
 				4ABE6CFF1FA08AF00075AF37 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				4ABE6CC41FA070430075AF37 /* SHCircleSlideOnLine.m in Sources */,
 				4ABE6CF81FA08AF00075AF37 /* MASCompositeConstraint.m in Sources */,
+				4ABE6D231FA2D3690075AF37 /* SHFontSizeSelectView.m in Sources */,
 				4ABE6CFB1FA08AF00075AF37 /* MASLayoutConstraint.m in Sources */,
 				4ABE6D071FA17EDB0075AF37 /* UIColor+Hex.m in Sources */,
 				4AF47F841F9DCDAA008B8E91 /* AppDelegate.m in Sources */,
 				4ABE6CC31FA070430075AF37 /* SHSliderControl.m in Sources */,
 				4ABE6D011FA08AF00075AF37 /* ViewController+MASAdditions.m in Sources */,
 				4ABE6CD71FA079850075AF37 /* SHStylePanelViewController.m in Sources */,
+				4ABE6D291FA2D3AD0075AF37 /* SHStationerySelectView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -13,4 +13,5 @@
 @property(nonatomic,assign)NSInteger selectedIndex;
 
 -(id)initWithFrame:(CGRect)frame images:(NSArray *)buttonImages;
+-(id)initWithImages:(NSArray *)buttonImages;
 @end
